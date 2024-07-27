@@ -1,0 +1,10 @@
+.header {
+    height: 70px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+}

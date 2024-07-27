@@ -1,0 +1,57 @@
+.hero__inner {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hero__title {
+    max-width: 595px;
+    font-size: 9rem;
+    font-weight: 800;
+    line-height: 10.2rem;
+}
+
+.hero__desc {
+    max-width: 404px;
+    margin-top: 16px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    color: #5a5959;
+}
+
+.hero__action {
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+.hero__store {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #5a5959;
+}
+
+.hero__icons {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.hero__thumb {
+    width: 530px;
+    height: 487px;
+}
+
+.hero__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

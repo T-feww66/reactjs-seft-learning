@@ -1,0 +1,124 @@
+@import "../../style/var.scss";
+.quizz-container {
+    position: relative;
+    width: 500px;
+    padding: 40px 60px;
+    background: $bg;
+    border-radius: 4px;
+
+    .active-question-no {
+        font-size: 32px;
+        font-weight: 500;
+        color: $primary;
+    }
+    .total-question {
+        font-size: 16px;
+        font-weight: 500;
+        color: $disabled;
+    }
+
+    .quizz-question {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .quizz-list-answer {
+        margin-top: 30px;
+        li {
+            text-decoration: none;
+            list-style-type: none;
+            color: $foreground;
+
+            font-size: 16px;
+            background-color: $bg;
+
+            border: 1px solid $disabled;
+            border-radius: 16px;
+            padding: 12px;
+
+            cursor: pointer;
+
+            & + li {
+                margin-top: 12px;
+            }
+        }
+
+        .selected-answer {
+            background-color: $primary;
+            border: 1px solid $accent;
+            color: $bg;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+button {
+    margin-top: 20px;
+    background: linear-gradient(0deg, $primary 0.03%, $accent);
+    width: 120px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    outline: none;
+    border: none;
+    color: $bg;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    border-radius: 9px;
+    transition: 0.3s;
+    &:hover {
+        scale: 1.1;
+    }
+
+    &:disabled {
+        background: $bg-accent;
+        color: $disabled;
+        cursor: not-allowed;
+    }
+}
+
+input {
+    margin-top: 20px;
+    width: 100%;
+    text-decoration: none;
+    list-style-type: none;
+    color: $foreground;
+
+    font-size: 16px;
+    background-color: $bg;
+
+    border: 1px solid $disabled;
+    border-radius: 16px;
+    padding: 12px;
+
+    outline: none;
+
+}
+
+.question-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-direction: column;
+    text-align: center;
+
+    h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        color: $primary;
+    }
+}

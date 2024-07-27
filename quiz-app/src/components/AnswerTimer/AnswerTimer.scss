@@ -1,0 +1,17 @@
+@import "../../style/var.scss";
+
+.answer-timer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid $disabled;
+}
+
+.process {
+    height: 5px;
+    background-color: red;
+    width: 0%;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}

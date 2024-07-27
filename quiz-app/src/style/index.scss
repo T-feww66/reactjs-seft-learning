@@ -1,0 +1,19 @@
+@import "./var.scss";
+//
+body {
+    font-family: monospace;
+    background: linear-gradient(0deg, $primary 0.03%, $accent);
+    color: $foreground;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 100vh;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

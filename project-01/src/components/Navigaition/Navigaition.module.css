@@ -1,0 +1,22 @@
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+}
+
+.nav__item {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav__item a {
+    color: #2e2e2e;
+    text-transform: uppercase;
+
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+}
+.nav__item:hover {
+    scale: 1.1;
+}
