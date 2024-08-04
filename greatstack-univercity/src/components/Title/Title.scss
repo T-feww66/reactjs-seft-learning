@@ -1,0 +1,19 @@
+.title {
+    margin: 0 auto;
+    text-align: center;
+
+    &__sub {
+        color: #212ea0;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &__heading {
+        margin-top: 5px;
+        font-size: 3.6rem;
+        color: #000f38;
+        margin-top: 5px;
+        text-transform: capitalize;
+    }
+}

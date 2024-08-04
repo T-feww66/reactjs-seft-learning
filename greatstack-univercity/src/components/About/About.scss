@@ -1,0 +1,45 @@
+.about {
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 70px;
+    }
+
+    &__media {
+        flex-basis: 40%;
+        position: relative;
+        border-radius: 25px;
+
+        &-img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+        }
+        &-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            cursor: pointer;
+        }
+    }
+
+    &__info {
+        flex-basis: 60%;
+
+        & .title {
+            text-align: left;
+        }
+    }
+    &__title {
+        max-width: 400px;
+    }
+
+    &__desc {
+        color: #676767;
+        margin-top: 15px;
+    }
+}

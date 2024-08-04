@@ -1,0 +1,87 @@
+.test {
+    &__inner {
+        margin-top: 30px;
+    }
+
+    .slider {
+        margin-top: 30px;
+        position: relative;
+        gap: 30px;
+        .arrow {
+            top: 50%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #212ea0;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            img {
+                width: 20px;
+            }
+
+            &-left {
+                left: 0;
+                rotate: 180deg;
+                transform: translateY(50%);
+            }
+            &-right {
+                right: 30px;
+                transform: translateY(-50%);
+            }
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            transition: 0.4s;
+        }
+
+        &__cards {
+            margin-left: 70px;
+            width: 880px;
+            padding: 20px 0;
+            overflow: hidden;
+        }
+
+        &__card {
+            width: 410px;
+            flex-shrink: 0;
+            padding: 20px;
+            box-shadow: 0 0 20px #0000000d;
+            border-radius: 10px;
+            color: #676767;
+            line-height: 1.4;
+            // background-color: red;
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                width: 65px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 4px solid #212ea0;
+            }
+        }
+
+        &__name {
+            color: #212ea0;
+            font-size: 2rem;
+        }
+
+        &__add {
+            font-size: 1.6rem;
+            color: #676767;
+        }
+
+        &__desc {
+            margin-top: 20px;
+        }
+    }
+}
