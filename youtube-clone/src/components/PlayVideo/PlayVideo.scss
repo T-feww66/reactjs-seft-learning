@@ -1,0 +1,142 @@
+.video__play {
+    height: 2000px;
+    iframe {
+        width: 100%;
+        height: 37vw;
+        border-radius: 15px;
+    }
+}
+
+.video__info {
+    margin: 20px 0;
+
+    &-bottom {
+        margin: 10px 0 0 0;
+        justify-content: space-between;
+    }
+}
+
+.video__title {
+    font-weight: 600;
+    font-size: 2.2rem;
+    color: #000;
+}
+
+.video__times {
+    font-size: 1.4rem;
+}
+
+.video__action {
+    gap: 15px;
+
+    &-group {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.video__icon {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.separate {
+    display: block;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+// subscribers
+
+.sub {
+    img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    &__name {
+        color: #000;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    &__times {
+        font-size: 1.4rem;
+        color: #5a5a5a;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 32px;
+        padding: 8px 30px;
+        margin-left: auto;
+        background: red;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__desc {
+        margin-top: 15px;
+        font-size: 1.4rem;
+        color: #5a5a5a;
+    }
+}
+
+.video__publisher {
+    padding-left: 55px;
+}
+
+// comment
+.comment {
+    &__title {
+        font-size: 14px;
+        color: #5a5a5a;
+    }
+
+    &__contents {
+
+        margin-top: 30px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+
+        & + & {
+            margin-top: 30px;
+        }
+        .comment__avatar {
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }
+
+    &__name {
+        gap: 15px;
+
+        span {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #5a5a5a;
+        }
+    }
+
+    &__desc {
+        margin: 10px 0;
+        font-size: 1.4rem;
+        color: #5a5a5a;
+    }
+}

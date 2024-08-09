@@ -1,0 +1,39 @@
+.feed {
+    margin-top: 30px;
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #000;
+        margin: 5px 0;
+        -webkit-line-clamp: 2;
+        display: box;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__name {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #555;
+        margin: 6px 0;
+    }
+
+    &__desc {
+        font-size: 1.4rem;
+        gap: 10px;
+    }
+}
